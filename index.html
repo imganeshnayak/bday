@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <link rel="stylesheet" href="./src/assets/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+</head>
+<body>
+    <div id="particles-js"></div>
+    <div class="container">
+        <!-- Add these sparkle elements -->
+        <div class="sparkle" style="top: 10%; left: 20%"></div>
+        <div class="sparkle" style="top: 30%; left: 80%"></div>
+        <div class="sparkle" style="top: 70%; left: 40%"></div>
+        <div class="sparkle" style="top: 50%; left: 90%"></div>
+        <!-- Existing content -->
+        <h1 class="birthday-text" style="margin-bottom: 50px;">Happy Birthday!</h1>
+        <div class="cake">
+            <div class="plate"></div>
+            <div class="layer layer-bottom"></div>
+            <div class="layer layer-middle"></div>
+            <div class="layer layer-top"></div>
+            <div class="icing"></div>
+            <div class="drip drip1"></div>
+            <div class="drip drip2"></div>
+            <div class="drip drip3"></div>
+            <div class="candle">
+                <div class="flame"></div>
+            </div>
+        </div>
+        <div class="message" style="position: absolute; bottom: 20%; width: 100%;">
+        </div>
+        <div class="typing-text"></div>
+        <audio id="birthday-song" loop>
+            <source src="./src/assets/audio/1.mp3" type="audio/mp3">
+        </audio>
+        <div class="music-control" onclick="toggleMusic()">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="#fff">
+                <path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/>
+            </svg>
+        </div>
+    </div>
+</body>
+<script src="./src/assets/js/main.js"></script>
+</html>
